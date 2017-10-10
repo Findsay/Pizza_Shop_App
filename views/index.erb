@@ -1,0 +1,15 @@
+<h1>All pizza orders</h1>
+
+<div class="wholeorder">
+<% @pizzas.each do |pizza| %>
+<div class = "indexp">
+  <p>Name: <%= pizza.pretty_name() %></p>
+  <p>Order: <%= pizza.quantity() %> x <%= pizza.topping() %> </p>
+</div>
+  <p><a href="/pizzas/<%= pizza.id %>">Show Order</a></p>
+
+
+
+
+<% end %>
+</div>
